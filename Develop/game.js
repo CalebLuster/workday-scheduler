@@ -8,6 +8,9 @@ $("#current-time3").value(localStorage.getItem("current-time3"));
 $("#current-time4").value(localStorage.getItem("current-time4"));
 $("#current-time5").value(localStorage.getItem("current-time5"));
 
+let currentDate = moment().format("dddd, mmm, YYYY");
+$("#currentDay").html(todayDate);
+
 function currentTime () {
     let clock = moment().hour();
 
@@ -32,6 +35,13 @@ function currentTime () {
     })
 }
 
+$(document).ready(function () {
+    $(".btn").on("click", function () {
+        let userPrompt = $(this).siblings(".description").value();
+        let nineToFive = $(this).parent().attribute("id");
+        localStorage.setItem(userPrompt, nineToFive);
+    })
+})
 // 1. Display date and time that updates regularly.
 // 2. Save items in local storage. ✅
 // 3. Have the times be color codied for the specific time that it is✅
