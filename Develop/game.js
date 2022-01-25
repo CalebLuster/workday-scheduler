@@ -1,3 +1,15 @@
+$("#current-time9").value(localStorage.getItem("current-time9"));
+$("#current-time10").value(localStorage.getItem("current-time10"));
+$("#current-time11").value(localStorage.getItem("current-time11"));
+$("#current-time12").value(localStorage.getItem("current-time12"));
+$("#current-time1").value(localStorage.getItem("current-time1"));
+$("#current-time2").value(localStorage.getItem("current-time2"));
+$("#current-time3").value(localStorage.getItem("current-time3"));
+$("#current-time4").value(localStorage.getItem("current-time4"));
+$("#current-time5").value(localStorage.getItem("current-time5"));
+
+
+
 // 1. Display date and time that updates regularly.
 // 2. Save items in local storage
 // 3. Have the times be color codied for the specific time that it is
